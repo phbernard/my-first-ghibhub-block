@@ -1,5 +1,10 @@
 import { FileBlockProps, getLanguageFromFilename } from "@githubnext/blocks";
-import { Button, Box } from "@primer/react";
+import { Nstaller, Connector } from "@nstaldev/react-core";
+import { Box } from "@primer/react";
+import AllComponents from "../nstal-components";
+
+import { CreateFile } from '@nstaldev/react-core';
+
 import "./index.css";
 
 export default function (props: FileBlockProps) {
@@ -17,26 +22,14 @@ export default function (props: FileBlockProps) {
         borderRadius={6}
         overflow="hidden"
       >
-        <Box
-          bg="canvas.subtle"
-          p={3}
-          borderBottomWidth={1}
-          borderBottomStyle="solid"
-          borderColor="border.default"
-        >
-          File: {context.path} {language}
-        </Box>
-        <Box p={4}>
-          <p>Metadata example: this button has been clicked:</p>
-          <Button
-            onClick={() =>
-              onUpdateMetadata({ number: (metadata.number || 0) + 1 })
-            }
-          >
-            {metadata.number || 0} times
-          </Button>
-          <pre className="mt-3 p-3">{content}</pre>
-        </Box>
+        <Nstaller components={AllComponents}>
+          Hey!
+          <Connector />
+
+          Now do it:
+
+          <CreateFile path="the-file.txt" content="Hey!!" />
+        </Nstaller>
       </Box>
     </Box>
   );
