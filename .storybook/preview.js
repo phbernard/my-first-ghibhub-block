@@ -1,3 +1,5 @@
+import {ThemeProvider} from '@primer/react'
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -7,3 +9,10 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  (Story) =>
+  <ThemeProvider>
+    <Story/>
+  </ThemeProvider>
+];
