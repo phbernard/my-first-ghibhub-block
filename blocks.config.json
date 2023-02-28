@@ -5,7 +5,7 @@
     "title": "Example File Block",
     "description": "A basic file block",
     "entry": "blocks/example-file-block/index.tsx",
-    "matches": ["*"],
+    "matches": ["*.nstal", "*.nstaller"],
     "example_path": "https://github.com/facebook/react/blob/main/packages/react-dom/index.js"
   }
 ]
