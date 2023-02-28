@@ -5,18 +5,6 @@ import AllComponents from "../nstal-components";
 import { CreateFile } from '@nstaldev/react-core';
 import MDX from "@mdx-js/runtime";
 
-
-const nstaller = `
-# Hello nstal!
-
-This is a sample nstaller.
-
-<CreateFile path="another-file.txt" content="Some interesting content" />
-
-Et voilà !
-`;
-
-
 export default function (props: FileBlockProps) {
   const { context, content, metadata, onUpdateMetadata } = props;
   const language = Boolean(context.path)
@@ -33,7 +21,7 @@ export default function (props: FileBlockProps) {
         <Connector />
 
         <MDX components={components} scope={{ cf: 'Hihi' }}>
-          {nstaller}
+          {content}
         </MDX>
       </Nstaller>
     </Box>
