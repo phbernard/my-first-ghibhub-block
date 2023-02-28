@@ -5,17 +5,9 @@ import { Meta, StoryObj } from "@storybook/react";
 import Connection from './Connection';
 import { ConnectionStatus } from '@nstaldev/react-core'
 
-import {ThemeProvider} from '@primer/react'
-
 export default {
   title: 'Connection',
   component: Connection,
-  decorators: [
-    (Story) =>
-    <ThemeProvider>
-      <Story/>
-    </ThemeProvider>
-  ],
   argTypes: {
   },
 } as Meta;
