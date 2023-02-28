@@ -1,0 +1,7 @@
+# Hello nstal!
+
+This is a sample nstaller.
+
+<CreateFile path="another-file.txt" content="Some interesting content" />
+
+Et voilà !
