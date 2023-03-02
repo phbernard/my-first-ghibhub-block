@@ -1937,10 +1937,10 @@
     rpc-websockets "^7.5.0"
     ws "^8.8.0"
 
-"@nstaldev/react-core@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@nstaldev/react-core/-/react-core-0.1.4.tgz#3957947082124b659591c2a60214ed0eab3e7510"
-  integrity sha512-dbSNtcri7d0ZbKq4eNL8GBJr1Pv2A35JWRG5Nb5yUKg7NvKBNGNqQVuTgiCmospVYPTlFOFWD8Dfcq9ziaIm5w==
+"@nstaldev/react-core@^0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@nstaldev/react-core/-/react-core-0.1.12.tgz#165e591632b35077861de2cda84dd4aeea2fe854"
+  integrity sha512-djEfbFeE7lGGIa0NpBoYcmwWZahRcix7Bul+TLyArAS4WHz2EwFQfPf20auu5V7nW7DXVvbUPNtJWNS4Fr/vEA==
   dependencies:
     "@nstaldev/net" "^0.1.1"
     random-string "^0.2.0"
@@ -1977,6 +1977,11 @@
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/@primer/behaviors/-/behaviors-1.3.1.tgz#febae28e5f7824f1fa547389b3ff8563e171da58"
   integrity sha512-aMRDUQ350lk0FxtL5gJWPFHHOSSzDbJ6uNJVIt8XSqiGe1pxuW5mVVfrEp1uvzZ0pCHkCdm9fycjnfOeMeIrOQ==
+
+"@primer/octicons-react@^17.12.0":
+  version "17.12.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons-react/-/octicons-react-17.12.0.tgz#d863c32736e138d25b80bef5c2628a29963b7b22"
+  integrity sha512-GUjV6IT1Ck2lu2GVu1loR0e2dcX2e9aIVmX5rBdR7HJnRdYKY7XH+FnYj7y9sEmzUdNEDswxkefiQlfGrBXlzA==
 
 "@primer/octicons-react@^17.3.0":
   version "17.3.0"

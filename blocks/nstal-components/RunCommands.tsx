@@ -1,6 +1,7 @@
 import { RunCommandsInstructionsProps, ExecutionStatus } from '@nstaldev/react-core'
 import { Box, Spinner } from '@primer/react'
 import { CheckCircleFillIcon, XCircleFillIcon, XCircleIcon } from '@primer/octicons-react'
+import CommandOutput from './CommandOutput';
 
 type StatusIconProps = { status?: ExecutionStatus };
 
@@ -43,19 +44,17 @@ const RunCommands = (props: RunCommandsInstructionsProps) => (
                 {command}
               </Box>
               <div>
-                <StatusIcon status={props.status[i]} />
+                <StatusIcon status={props.status && props.status[i]} />
               </div>
             </div>
-            {props.output[i] && (
-              <Box as='pre' sx={{ marginTop: 0, marginBottom: 2, maxHeight: 50, overflowY: 'auto', borderRadius: 6, p: 1, backgroundColor: 'neutral.emphasis', color: 'fg.onEmphasis' }}>
-                {props.output[i]}
-              </Box>
+            {props.output && props.output[i] && (
+              <CommandOutput output={props.output[i]} />
             )}
           </div>
         ))}
       </Box>
     </Box>
   </div>
-)
+);
 
 export default RunCommands
