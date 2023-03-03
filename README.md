@@ -1,45 +1,34 @@
-# GitHub Blocks Template
+# Nstal GitHub Block
 
-Use this repository as a starter template for building your own Blocks.
-## Quickstart
+[Nstal](https://nstal.dev/) is a system to turn text documentation into executable procedures.
+See your regular README that asks you to run this and do that?
+Nstal can complete all these tasks for you.
 
-> 🛑 Currently, you must be flagged into the [GitHub Blocks Technical Preview](https://blocks.githubnext.com) in order to develop blocks. There is no "offline" development mode at this time.
+This [GitHub block](https://blocks.githubnext.com/) allows you to run nstallers right from GitHub.
 
-Fork this repo using the [`Use this template`](https://github.com/githubnext/blocks-template/generate) button above:
+An nstaller is basically Markdown with special markups (technically, this is an MDX document).
+At first, the nstal GitHub block shows static text, as if the nstaller was a classic Markdown doc.
+The only strange element: a box at the top, asking you to run a command in order to get live.
 
-!["Use this template" button](https://user-images.githubusercontent.com/8978670/144893319-5d45ab5c-12c0-42b4-99f8-97f658deb03b.png)
+![nstaller - Not connected](./assets/not-connected.png?raw=true "Not connected")
 
-Then, clone _your_ repo (not [this one!](https://github.com/githubnext/blocks-template)) and get ready for action:
+As soon as you run this command, the nstaller comes to life. The first instruction is highlighted:
 
-```bash
-yarn # install dependencies
-yarn start # start the dev server
-# Or use npm, pnpm, you know the drill
-```
+![nstaller - Connected](./assets/connected.png?raw=true "Connected")
 
-When you visit [localhost:4000](https://localhost:4000) in your browser, you'll be
-redirected to the Blocks app, but your locally-developed blocks will appear in the block picker:
+Click it and the magic happens:
 
-<img alt="Block picker" src="https://user-images.githubusercontent.com/56439/181648955-101b6567-3f9b-44b3-af99-7ef3ca6161b9.png" width="418" />
+![Running a command](./assets/running.png?raw=true "Running a command")
 
-(if you're using Safari (or another browser that doesn't permit calling `http` URLs from an `https` page), run `yarn start-https` and visit [https://localhost:4000](https://localhost:4000) instead.)
+Done!
 
-This template includes one example File Block and one Folder Block. The dev server supports hot reloading, so make some changes, and see what they do!
+![First instruction completed](./assets/completed.png?raw=true "First instruction completed")
 
-## Under the hood
 
-Currently, Blocks are [React](https://reactjs.org/) components. They have a well-defined contract with their surroundings, and receive a [fixed set of props](https://github.com/githubnext/blocks/blob/main/docs/Developing%20blocks/4%20API%20reference%20and%20types.md) when they are instantiated. They are developed in [TypeScript](https://www.typescriptlang.org/), and bundled with [Vite](https://vitejs.dev/).
+Read, click, read, click... When it's over, everything was done for you *and*
+you understood what just happened.
 
-## More Info
+## Write you own nstaller
 
-Visit [githubnext/blocks](https://blocks.githubnext.com/githubnext/blocks) for a full tutorial, documentation, and examples.
-
-You should also join us in our discord! There's a [#blocks channel](https://discord.com/channels/735557230698692749/1039950186136469535) where you can connect with us and other folks who are building Blocks:
-
-> 👋 https://discord.gg/githubnext
-## License
-
-MIT
-
-✌️ ❤️
-_GitHub Next_
+[Get started with nstal](https://nstal.dev/getting-started) and write your first automated
+tutorial or installation procedure.
