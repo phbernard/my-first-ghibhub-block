@@ -1,7 +1,7 @@
 import { FileBlockProps, getLanguageFromFilename } from "@githubnext/blocks";
 import { Nstaller, Connector } from "@nstaldev/react-core";
 import { Box, useTheme } from "@primer/react";
-import AllComponents from "../nstal-components";
+import AllComponents from "./components";
 import { CreateFile, RunCommands, StartEverRunningCommand, VisitLink, Milestone } from '@nstaldev/react-core';
 import MDX from "@mdx-js/runtime";
 import ConfettiExplosion from "react-confetti-explosion";

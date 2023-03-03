@@ -4,7 +4,7 @@
     "id": "file-block",
     "title": "Nstal",
     "description": "Show & run nstallers",
-    "entry": "blocks/example-file-block/index.tsx",
+    "entry": "blocks/index.tsx",
     "matches": ["*.nstal", "*.nstaller"],
     "example_path": "https://blocks.githubnext.com/phbernard/nstal-github-block/blob/main/install-tailwind-css-with-nextjs.nstal"
   }
