@@ -1,10 +1,10 @@
 import { FileBlockProps, getLanguageFromFilename } from "@githubnext/blocks";
 import { Nstaller, Connector } from "@nstaldev/react-core";
-import { Box } from "@primer/react";
+import { Box, useTheme } from "@primer/react";
 import AllComponents from "../nstal-components";
 import { CreateFile, RunCommands, StartEverRunningCommand, VisitLink, Milestone } from '@nstaldev/react-core';
 import MDX from "@mdx-js/runtime";
-import Confetti from "react-confetti";
+import ConfettiExplosion from "react-confetti-explosion";
 
 export default function (props: FileBlockProps) {
   const { context, content, metadata, onUpdateMetadata } = props;
@@ -20,6 +20,8 @@ export default function (props: FileBlockProps) {
     Milestone
   };
 
+  const theme = useTheme();
+
   return (
     <Box p={4}>
       <Nstaller components={AllComponents}>
@@ -30,7 +32,12 @@ export default function (props: FileBlockProps) {
         </MDX>
 
         <Milestone>
-          <Confetti recycle={false} />
+          <Box sx={{ display: "flex", flexDirection: 'column', alignItems: 'center', marginY: 32 }}>
+            <Box sx={{ fontWeight: theme.theme?.fontWeights.semibold, fontSize: theme.theme?.fontSizes[3] }}>
+              Well done!
+              <ConfettiExplosion />
+            </Box>
+          </Box>
         </Milestone>
       </Nstaller>
     </Box>
