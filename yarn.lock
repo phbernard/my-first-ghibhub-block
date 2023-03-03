@@ -1929,20 +1929,20 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@nstaldev/net@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@nstaldev/net/-/net-0.1.1.tgz#0d0823e3ea8e8547208d52780c285642539030c1"
-  integrity sha512-dZz/SGbZRDJLRfS002OEOee4lWuhKW/CN71Fotr5gYjg1c2klyY14+YASbrgQjz7p4ORY5I5sW+3cdPGx38vhQ==
+"@nstaldev/net@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@nstaldev/net/-/net-0.1.16.tgz#f34d1168963140bd9541b4e77c8f05a5036c6144"
+  integrity sha512-zR59zCGG1t84FF3zfDW6XaLoKKRgnaL4dGVopvdoRuhn6H6YKuyTAdnQdnRTufxvsx01FWSz1fwXE7TjyXcsCw==
   dependencies:
     rpc-websockets "^7.5.0"
     ws "^8.8.0"
 
-"@nstaldev/react-core@^0.1.12":
-  version "0.1.12"
-  resolved "https://registry.yarnpkg.com/@nstaldev/react-core/-/react-core-0.1.12.tgz#165e591632b35077861de2cda84dd4aeea2fe854"
-  integrity sha512-djEfbFeE7lGGIa0NpBoYcmwWZahRcix7Bul+TLyArAS4WHz2EwFQfPf20auu5V7nW7DXVvbUPNtJWNS4Fr/vEA==
+"@nstaldev/react-core@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@nstaldev/react-core/-/react-core-0.1.16.tgz#9cfce2c2906f77cc9e84b17612ee5269e19f189f"
+  integrity sha512-ZUdLcH/Z6b7RMwj1RGtRe063K6u+/KgxwiCmeD31F5voPOy7Y3uMNBETc2zeZNyEOkAxKHObOkbuFZ+KamVtDw==
   dependencies:
-    "@nstaldev/net" "^0.1.1"
+    "@nstaldev/net" "^0.1.16"
     random-string "^0.2.0"
     rpc-websockets "^7.5.0"
 
@@ -9495,6 +9495,13 @@ raw-loader@^4.0.2:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
+react-confetti@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-confetti/-/react-confetti-6.1.0.tgz#03dc4340d955acd10b174dbf301f374a06e29ce6"
+  integrity sha512-7Ypx4vz0+g8ECVxr88W9zhcQpbeujJAVqL14ZnXJ3I23mOI9/oBVTQ3dkJhUmB0D6XOtCZEM6N0Gm9PMngkORw==
+  dependencies:
+    tween-functions "^1.2.0"
+
 react-docgen-typescript@^2.1.1:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-2.2.2.tgz#4611055e569edc071204aadb20e1c93e1ab1659c"
@@ -10937,6 +10944,11 @@ tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
   integrity sha512-JVa5ijo+j/sOoHGjw0sxw734b1LhBkQ3bvUGNdxnVXDCX81Yx7TFgnZygxrIIWn23hbfTaMYLwRmAxFyDuFmIw==
+
+tween-functions@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha512-PZBtLYcCLtEcjL14Fzb1gSxPBeL7nWvGhO5ZFPGqziCcr8uvHp0NDmdjBchp6KHL+tExcg0m3NISmKxhU394dA==
 
 twind@^0.16.17:
   version "0.16.17"

@@ -12,11 +12,12 @@
   "dependencies": {
     "@githubnext/blocks": "^2.3.5",
     "@mdx-js/runtime": "2.0.0-next.9",
-    "@nstaldev/net": "^0.1.1",
-    "@nstaldev/react-core": "^0.1.12",
+    "@nstaldev/net": "^0.1.16",
+    "@nstaldev/react-core": "^0.1.16",
     "@primer/octicons-react": "^17.12.0",
     "random-string": "^0.2.0",
     "react": "^18.1.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.1.0"
   },
   "devDependencies": {

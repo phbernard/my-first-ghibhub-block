@@ -2,8 +2,9 @@ import { FileBlockProps, getLanguageFromFilename } from "@githubnext/blocks";
 import { Nstaller, Connector } from "@nstaldev/react-core";
 import { Box } from "@primer/react";
 import AllComponents from "../nstal-components";
-import { CreateFile } from '@nstaldev/react-core';
+import { CreateFile, RunCommands, StartEverRunningCommand, VisitLink, Milestone } from '@nstaldev/react-core';
 import MDX from "@mdx-js/runtime";
+import Confetti from "react-confetti";
 
 export default function (props: FileBlockProps) {
   const { context, content, metadata, onUpdateMetadata } = props;
@@ -12,7 +13,11 @@ export default function (props: FileBlockProps) {
     : "N/A";
 
   const components = {
-    CreateFile
+    CreateFile,
+    RunCommands,
+    StartEverRunningCommand,
+    VisitLink,
+    Milestone
   };
 
   return (
@@ -23,6 +28,10 @@ export default function (props: FileBlockProps) {
         <MDX components={components} scope={{ cf: 'Hihi' }}>
           {content}
         </MDX>
+
+        <Milestone>
+          <Confetti recycle={false} />
+        </Milestone>
       </Nstaller>
     </Box>
   );
