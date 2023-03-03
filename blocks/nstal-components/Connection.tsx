@@ -48,7 +48,12 @@ const Connection = (props: ConnectionInstructionsProps) => {
             Connected!
           </Box>,
           <Box sx={{ fontWeight: theme.theme?.fontWeights.semibold, fontSize: theme.theme?.fontSizes[3] }}>
-            An error occured. Please refresh this page.
+            <Box as="p">
+              An error occured.
+            </Box>
+            <Box as="p">
+              Please terminate all running <code>nstal</code> commands and refresh this page.
+            </Box>
           </Box>
         ]
       }
