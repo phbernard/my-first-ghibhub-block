@@ -36,7 +36,7 @@ const Connection = (props: ConnectionInstructionsProps) => {
           <div style={{ flexGrow: 1 }}>
             <Box sx={{ display: 'flex', gap: 16, alignItems: 'center' }}>
               <Box sx={{ flexGrow: 1 }}>
-                To automate the following instructions, run:
+                To automate the following instructions, run this command in the directory where they should take place:
               </Box>
               <Spinner size='small' />
             </Box>
