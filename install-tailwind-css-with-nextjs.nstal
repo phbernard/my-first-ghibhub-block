@@ -1,0 +1,75 @@
+# Install Tailwind CSS with Next.js
+
+## Create your project
+
+Start by creating a new Next.js project. The most common approach is to use Create Next App.
+
+<RunCommands commands={[
+  "npx create-next-app@latest my-app --js --eslint --src-dir --experimental-app --import-alias='@/*'",
+  "cd my-app"
+]} />
+
+## Install Tailwind CSS
+
+Install `tailwindcss` and its peer dependencies via npm, and then run the init command to generate both `tailwind.config.js` and `postcss.config.js`.
+
+<RunCommands commands={[
+  "yarn add -D tailwindcss postcss autoprefixer",
+  "npx tailwindcss init -p"
+]} />
+
+## Configure your template paths
+
+Add the paths to all of your template files in your `tailwind.config.js` file.
+
+<CreateFile path="tailwind.config.js" content={
+  `/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}`
+} />
+
+## Add the Tailwind directives to your CSS
+
+Add the `@tailwind` directives for each Tailwind’s layers to your `globals.css` file.
+
+<CreateFile path="src/app/globals.css" content={
+  `@tailwind base;
+@tailwind components;
+@tailwind utilities;`
+} />
+
+## Start your build process
+
+Run your build process.
+
+<StartEverRunningCommand command="yarn dev" />
+
+## Start using Tailwind in your project
+
+Start using Tailwind’s utility classes to style your content.
+
+<CreateFile path="src/app/page.js" content={
+  `export default function Home() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}`
+} />
+
+## Make sure it works
+
+Visit your app and check the result.
+
+<VisitLink url="http://localhost:3000" />
