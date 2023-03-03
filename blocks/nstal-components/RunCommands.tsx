@@ -35,8 +35,8 @@ const RunCommands = (props: RunCommandsInstructionsProps) => (
       Run the following commands:
     </Box>
 
-    <Box sx={{ backgroundColor: "white", borderRadius: 6, marginY: 16 }}>
-      <Box sx={{ backgroundColor: "neutral.subtle", p: 16 }}>
+    <Box sx={{ backgroundColor: "white", marginY: 16, borderRadius: 6 }}>
+      <Box sx={{ backgroundColor: "neutral.subtle", paddingX: 16, paddingY: 2, borderRadius: 6 }}>
         {props.commands.map((command, i) => (
           <div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
