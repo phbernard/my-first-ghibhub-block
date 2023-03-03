@@ -11,7 +11,7 @@ Start by creating a new Next.js project. The most common approach is to use Crea
 
 ## Install Tailwind CSS
 
-Install `tailwindcss` and its peer dependencies via npm, and then run the init command to generate both `tailwind.config.js` and `postcss.config.js`.
+Install `tailwindcss` and its peer dependencies, and then run the init command to generate both `tailwind.config.js` and `postcss.config.js`.
 
 <RunCommands commands={[
   "yarn add -D tailwindcss postcss autoprefixer",
